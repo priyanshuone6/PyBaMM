@@ -2,7 +2,7 @@ import pybamm
 import numpy as np
 
 # Start with a Base Model
-model = pybamm.BaseModel()
+model = pybamm.BaseModel(name="half cell")
 
 # Define parameters
 L_s = pybamm.Parameter("Separator thickness [m]")
@@ -27,8 +27,12 @@ model.length_scales = {"separator": L_n, "electrode": L_n, "particle": R}
 x_s = pybamm.SpatialVariable("x_s", domain="separator", coord_sys="cartesian")
 x_n = pybamm.SpatialVariable("x_n", domain="electrode", coord_sys="cartesian")
 r = pybamm.SpatialVariable(
-    "r", domain="particle", auxiliary_domains={"secondary": "electrode"}
+    "r",
+    domain="particle",
+    auxiliary_domains={"secondary": "electrode"},
+    coord_sys="spherical polar",
 )
+
 c = pybamm.Variable(
     "Electrode particle concentration",
     domain="particle",
