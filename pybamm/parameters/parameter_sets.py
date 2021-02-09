@@ -175,3 +175,13 @@ Ai2020 = {
 #
 # Lead-acid
 #
+Sulzer2019 = {
+    "chemistry": "lead-acid",
+    "cell": "BBOXX_Sulzer2019",
+    "negative electrode": "lead_Sulzer2019",
+    "separator": "agm_Sulzer2019",
+    "positive electrode": "lead_dioxide_Sulzer2019",
+    "electrolyte": "sulfuric_acid_Sulzer2019",
+    "experiment": "1C_discharge_from_full",
+    "citation": "Sulzer2019physical",
+}
