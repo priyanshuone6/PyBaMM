@@ -160,6 +160,18 @@ Prada2013 = {
     "citation": ["Chen2020", "Lain2019", "Prada2013"],
 }
 
+Ai2020 = {
+    "chemistry": "lithium-ion",
+    "cell": "Enertech_Ai2020",
+    "negative electrode": "graphite_Ai2020",
+    "separator": "separator_Ai2020",
+    "positive electrode": "lico2_Ai2020",
+    "electrolyte": "lipf6_Enertech_Ai2020",
+    "experiment": "1C_discharge_from_full_Ai2020",
+    "sei": "example",
+    "citation": "Ai2019",
+}
+
 #
 # Lead-acid
 #
